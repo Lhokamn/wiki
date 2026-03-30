@@ -47,6 +47,8 @@ Copyright &copy; 2026 Lhokam
 # nav = [
 #   { "Get started" = "index.md" },
 #   { "Markdown in 5min" = "markdown.md" },
+#   { "Apprendre Docker" = "docker/index.md"},
+#   { "Apprendre Linux" = "OS/index.md"},
 # ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
@@ -200,7 +202,7 @@ features = [
     # When navigation paths are activated, a breadcrumb navigation is rendered
     # above the title of each page
     # https://zensical.org/docs/setup/navigation/#navigation-path
-    "navigation.path",
+    #"navigation.path",
 
     # When pruning is enabled, only the visible navigation items are included
     # in the rendered HTML, reducing the size of the built site by 33% or more.
@@ -210,12 +212,12 @@ features = [
     # When sections are enabled, top-level sections are rendered as groups in
     # the sidebar for viewports above 1220px, but remain as-is on mobile.
     # https://zensical.org/docs/setup/navigation/#navigation-sections
-    "navigation.sections",
+    #"navigation.sections",
 
     # When tabs are enabled, top-level sections are rendered in a menu layer
     # below the header for viewports above 1220px, but remain as-is on mobile.
     # https://zensical.org/docs/setup/navigation/#navigation-tabs
-    #"navigation.tabs",
+    "navigation.tabs",
 
     # When sticky tabs are enabled, navigation tabs will lock below the header
     # and always remain visible when scrolling down.
@@ -247,10 +249,6 @@ features = [
     # always rendered as part of the navigation sidebar on the left.
     # https://zensical.org/docs/setup/navigation/#navigation-integration
     #"toc.integrate",
-
-
-    # Activate footer
-    "navigation.footer"
 ]
 
 # ----------------------------------------------------------------------------
@@ -304,6 +302,13 @@ toggle.name = "Switch to light mode"
 # ----------------------------------------------------------------------------
 # The "extra" section contains miscellaneous settings.
 # ----------------------------------------------------------------------------
-#[[project.extra.social]]
-#icon = "fontawesome/brands/github"
-#link = "https://github.com/user/repo"
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/Lhokamn"
+
+
+[project.extra]
+alternate = [
+    { name = "Français", link = "", lang = "fr" },
+    { name = "English", link = "/en/", lang = "en" }
+]
