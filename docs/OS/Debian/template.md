@@ -13,58 +13,59 @@ Une fois l'image téléchargée nous allons créer notre VM Template avec 2 coeu
 
 Vous devez avoir une ressemblance comme ceci :
 
-![](assets/images/debian/hyperviseurs.png)
+![](../../assets/images/debian/hyperviseurs.png)
+
 ## Configuration Debian 
 
 Pour la configuration on peut faire avec l'interface graphique ou en installation classique, cela ne change pas. Je fais personnellement avec **Install** car je suis plus habitué
 
-![](assets/images/debian/install-01.png)
+![](../../assets/images/debian/install-01.png)
 
 À titre personnel, je met toujours mes machines Linux en anglais car il existe plein de tutos qui sont en anglais et que je préfère (je mets ensuite le clavier en azerty) mais là vous pouvez faire ce que vous voulez 
-![](assets/images/debian/install-02.png)
+![](../../assets/images/debian/install-02.png)
 
 Pour la région j'habite en France, je vais donc mettre France
-![](assets/images/debian/install-03.png)
+![](../../assets/images/debian/install-03.png)
 
 Si vous avez fait comme moi, sélectionnez en LOCALE celle des États-Unis
-![](assets/images/debian/install-04.png)
+![](../../assets/images/debian/install-04.png)
 
 Cela vous demandera ensuite le clavier et là mettez ce que vous préférez 
-![](assets/images/debian/install-05.png)
+![](../../assets/images/debian/install-05.png)
 
 Pour le hostname, il faut toujours mettre un nom parlant, dans mon cas ce sera ``debian-template ``
-![](assets/images/debian/install-06.png)
+![](../../assets/images/debian/install-06.png)
 
 Pour le moment on laisse le domaine à vide
-![](assets/images/debian/install-07.png)
+![](../../assets/images/debian/install-07.png)
 
 Ceci est un long débat sur comment administrer une machine Linux. Pour moi, il ne faut pas utiliser le compte root, il ne faut donc pas lui donner de mot de passe comme cela, ce sera notre utilisateur qui sera dans le groupe sudo et root n'a pas de mot de passe
-![](assets/images/debian/install-08.png)
+![](../../assets/images/debian/install-08.png)
 
 Pour le nom d'utilisateur, nous allons donner un nom qui nous parle beaucoup. Comme j'aime beaucoup le seigneurs des anneaux je vais l'appeler **sauron**. Je rappelle que ceci est un tutoriel à but non-commercial, en entreprise veillez à respecter la charte de l'entreprise si vous ne voulez pas vous faire détruire par votre DSI.
-![](assets/images/debian/install-09.png)
+![](../../assets/images/debian/install-09.png)
 
 Pour son mot de passe mettez en un, mais on ne vas pas s'en servir beaucoup. Il faut juste qu'il soit assez sécurisées selon l'ANSII (au moins 14 caractères)
 
 Le stockage on ne vas pas le chiffrer car cela pourrait compromettre certaines applications 
-![](assets/images/debian/install-10.png)
+![](../../assets/images/debian/install-10.png)
 
 Et pour la répartition, nous sommes un serveur, utilisons la répartition serveur. La répartion "All files in one partition" est très bien aussi et si vous avez peur de mal faire quelque chose, utilisez-la sans soucis. 
-![](assets/images/debian/install-11.png)
+![](../../assets/images/debian/install-11.png)
 
 Par la suite n'oubliez pas d'effacer ce qu'il y a sur le disque. Pas de panique, les environnements sont isolés donc aucune donnée privée ne sera effacée
 
 Pas besoin de scanner d'autres medias d'installations, nous allons ensuite utiliser les dépôts apt. Sélectionnez le plus proche de vous pour attendre le moins
-![](assets/images/debian/install-12.png)
+![](../../assets/images/debian/install-12.png)
 
 Pour l'usage des paquets il est toujours préférable de le désactiver car cela garde un peu d'anonymat. Très utile quand on veut gérer une infra qui n'est pas publique 
-![](assets/images/debian/install-13.png)
+![](../../assets/images/debian/install-13.png)
 
 Pour la configuration de base, nous allons juste garder "SSH server" et "standard system utilities" qui vont nous simplifier la vie pour plus tard 
-![](assets/images/debian/install-14.png)
+![](../../assets/images/debian/install-14.png)
 
 Choississez d'installer grub sur le disque principal et sélectionnez-le, cela fera gagner du temps à chaque démarrage de la VM
-![](assets/images/debian/install-15.png)
+![](../../assets/images/debian/install-15.png)
 
 Une fois tout cela fait on peut redémarrer la machine. (Et avoir pris un café en attendant que l'installation se termine)
 
@@ -74,7 +75,7 @@ Une fois la machine redémarrée on fait un update dans le doute pour être sûr
 sudo apt update && sudo apt upgrade -y
 ```
 
-![](assets/images/debian/install-16.png)
+![](../../assets/images/debian/install-16.png)
 
 ## Configuration de sshd
 
@@ -82,7 +83,7 @@ Maintenant pour simplifier les commandes, nous allons utiliser ssh depuis un ter
 
 Pour se connecter à ssh il nous faut d'abord l'IP de la machine avec la commande ``ip a``
 
-![](assets/images/debian/ip-find.png)
+![](../../assets/images/debian/ip-find.png)
 
 Et on regarde si on peut se connecter avec le mot de passe
 

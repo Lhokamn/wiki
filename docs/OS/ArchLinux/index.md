@@ -1,4 +1,4 @@
 # Comprendre ArchLinux
 
 Actuellement en construction
-![](/assets/images/chantier.jpg)
+![](../../assets/images/chantier.jpg)
