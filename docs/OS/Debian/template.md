@@ -13,60 +13,58 @@ Une fois l'image téléchargée nous allons créer notre VM Template avec 2 coeu
 
 Vous devez avoir une ressemblance comme ceci :
 
-[![](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/scaled-1680-/ZDre4OyGtnGUa3zY-image-1771940395048.png)](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/ZDre4OyGtnGUa3zY-image-1771940395048.png)
-
+![](/assets/images/debian/hyperviseurs.png)
 ## Configuration Debian 
 
 Pour la configuration on peut faire avec l'interface graphique ou en installation classique, cela ne change pas. Je fais personnellement avec **Install** car je suis plus habitué
 
-[![](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/scaled-1680-/fTljJINzKnOMFLyo-image-1771940512625.png)](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/fTljJINzKnOMFLyo-image-1771940512625.png)
+![](/assets/images/debian/install-01.png)
 
 À titre personnel, je met toujours mes machines Linux en anglais car il existe plein de tutos qui sont en anglais et que je préfère (je mets ensuite le clavier en azerty) mais là vous pouvez faire ce que vous voulez 
-[![](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/scaled-1680-/XZQE1XNz2tXkBKW4-image-1771940700528.png)](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/XZQE1XNz2tXkBKW4-image-1771940700528.png)
+![](/assets/images/debian/install-02.png)
 
 Pour la région j'habite en France, je vais donc mettre France
-[![](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/scaled-1680-/0Ig1oM2ZedzLfv2f-image-1771940738812.png)](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/0Ig1oM2ZedzLfv2f-image-1771940738812.png)
+![](/assets/images/debian/install-03.png)
 
 Si vous avez fait comme moi, sélectionnez en LOCALE celle des États-Unis
-[![](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/scaled-1680-/04wQI2YRKidE15Kh-image-1771940802847.png)](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/04wQI2YRKidE15Kh-image-1771940802847.png)
+![](/assets/images/debian/install-04.png)
 
 Cela vous demandera ensuite le clavier et là mettez ce que vous préférez 
-[![](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/scaled-1680-/kJQ1Q43FYV8Gbfdw-image-1771940858937.png)](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/kJQ1Q43FYV8Gbfdw-image-1771940858937.png)
+![](/assets/images/debian/install-05.png)
 
 Pour le hostname, il faut toujours mettre un nom parlant, dans mon cas ce sera ``debian-template ``
-[![](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/scaled-1680-/E2BK2ZqgAJNLlAk2-image-1771940984319.png)](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/E2BK2ZqgAJNLlAk2-image-1771940984319.png)
+![](/assets/images/debian/install-06.png)
 
 Pour le moment on laisse le domaine à vide
-[![](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/scaled-1680-/z360sYUKQYKzOPBR-image-1771941014443.png)](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/z360sYUKQYKzOPBR-image-1771941014443.png)
+![](/assets/images/debian/install-07.png)
 
 Ceci est un long débat sur comment administrer une machine Linux. Pour moi, il ne faut pas utiliser le compte root, il ne faut donc pas lui donner de mot de passe comme cela, ce sera notre utilisateur qui sera dans le groupe sudo et root n'a pas de mot de passe
-[![](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/scaled-1680-/OQqJOCb1VmWEP2mo-image-1771941264675.png)](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/OQqJOCb1VmWEP2mo-image-1771941264675.png)
+![](/assets/images/debian/install-08.png)
 
 Pour le nom d'utilisateur, nous allons donner un nom qui nous parle beaucoup. Comme j'aime beaucoup le seigneurs des anneaux je vais l'appeler **sauron**. Je rappelle que ceci est un tutoriel à but non-commercial, en entreprise veillez à respecter la charte de l'entreprise si vous ne voulez pas vous faire détruire par votre DSI.
-[![](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/scaled-1680-/RcUwiC1qZhHW6uBb-image-1771941359552.png)](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/RcUwiC1qZhHW6uBb-image-1771941359552.png)
+![](/assets/images/debian/install-09.png)
 
 Pour son mot de passe mettez en un, mais on ne vas pas s'en servir beaucoup. Il faut juste qu'il soit assez sécurisées selon l'ANSII (au moins 14 caractères)
 
 Le stockage on ne vas pas le chiffrer car cela pourrait compromettre certaines applications 
-[![](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/scaled-1680-/3wMv3vvPmERakrvw-image-1771941868192.png)](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/3wMv3vvPmERakrvw-image-1771941868192.png)
+![](/assets/images/debian/install-10.png)
 
 Et pour la répartition, nous sommes un serveur, utilisons la répartition serveur. La répartion "All files in one partition" est très bien aussi et si vous avez peur de mal faire quelque chose, utilisez-la sans soucis. 
-[![](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/scaled-1680-/OXnvN9JC9hNPZoP9-image-1771941919240.png)](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/OXnvN9JC9hNPZoP9-image-1771941919240.png)
+![](/assets/images/debian/install-11.png)
 
 Par la suite n'oubliez pas d'effacer ce qu'il y a sur le disque. Pas de panique, les environnements sont isolés donc aucune donnée privée ne sera effacée
 
 Pas besoin de scanner d'autres medias d'installations, nous allons ensuite utiliser les dépôts apt. Sélectionnez le plus proche de vous pour attendre le moins
-[![](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/scaled-1680-/5WyGQ78LBj4Q9Wdp-image-1771942316513.png)](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/5WyGQ78LBj4Q9Wdp-image-1771942316513.png)
+![](/assets/images/debian/install-12.png)
 
 Pour l'usage des paquets il est toujours préférable de le désactiver car cela garde un peu d'anonymat. Très utile quand on veut gérer une infra qui n'est pas publique 
-[![](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/scaled-1680-/lR5aK17wEbgwBYqe-image-1771943357236.png)](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/lR5aK17wEbgwBYqe-image-1771943357236.png)
+![](/assets/images/debian/install-13.png)
 
 Pour la configuration de base, nous allons juste garder "SSH server" et "standard system utilities" qui vont nous simplifier la vie pour plus tard 
-[![](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/scaled-1680-/TMI6p7bQE4tCxXX9-image-1771943522412.png)](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/TMI6p7bQE4tCxXX9-image-1771943522412.png)
+![](/assets/images/debian/install-14.png)
 
 Choississez d'installer grub sur le disque principal et sélectionnez-le, cela fera gagner du temps à chaque démarrage de la VM
-
-[![](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/scaled-1680-/bJeDbBn4ZDxY8Blf-image-1771943746779.png)](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/bJeDbBn4ZDxY8Blf-image-1771943746779.png)
+![](/assets/images/debian/install-15.png)
 
 Une fois tout cela fait on peut redémarrer la machine. (Et avoir pris un café en attendant que l'installation se termine)
 
@@ -76,7 +74,7 @@ Une fois la machine redémarrée on fait un update dans le doute pour être sûr
 sudo apt update && sudo apt upgrade -y
 ```
 
-[![](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/scaled-1680-/2na3o0GXyXxXwrtV-image-1771944586382.png)](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/2na3o0GXyXxXwrtV-image-1771944586382.png)
+![](/assets/images/debian/install-16.png)
 
 ## Configuration de sshd
 
@@ -84,7 +82,7 @@ Maintenant pour simplifier les commandes, nous allons utiliser ssh depuis un ter
 
 Pour se connecter à ssh il nous faut d'abord l'IP de la machine avec la commande ``ip a``
 
-[![](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/scaled-1680-/9vUyLMWsgK7ZOdFT-image-1771943996791.png)](https://wiki.cclaudel.fr/uploads/images/gallery/2026-02/9vUyLMWsgK7ZOdFT-image-1771943996791.png)
+![](/assets/images/debian/ip-find.png)
 
 Et on regarde si on peut se connecter avec le mot de passe
 
