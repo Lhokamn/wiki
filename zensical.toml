@@ -45,8 +45,8 @@ Copyright &copy; 2026 Lhokam
 #
 # Read more: https://zensical.org/docs/setup/navigation/
 # nav = [
-#   { "Get started" = "index.md" },
-#   { "Markdown in 5min" = "markdown.md" },
+#   "index.md",
+#   "/OS/index.md",
 #   { "Apprendre Docker" = "docker/index.md"},
 #   { "Apprendre Linux" = "OS/index.md"},
 # ]
@@ -310,5 +310,5 @@ link = "https://github.com/Lhokamn"
 [project.extra]
 alternate = [
     { name = "Français", link = "", lang = "fr" },
-    { name = "English", link = "/en/", lang = "en" }
+    # { name = "English", link = "/en/", lang = "en" }
 ]
