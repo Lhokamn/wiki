@@ -1,10 +1,20 @@
+---
+tags:
+  - debian
+
+---
+
 # Debian c'est quoi ?
 
 Petit moment Wikipedia:
 
 Debian est une distribution Linux créé le **16 août 1996** par [Ian Murdock](https://fr.wikipedia.org/wiki/Ian_Murdock). La distributoin est géré par l'association **Debian Project**.
 
+!!! inline begin ""
+    ![](../../assets/images/debian/openlogo-75.png)
+
 Si les gens aiment autant Debian c'est pour deux grand aspect:
+
 1. Tout ce que fait Debian est gratuit. Il n'y a pas de licence payante pour avoir le maximum que ce peu proposer la distribution (comme Ubuntu avec sa version pro)
 2. Debian est d'une stabilité incroyable ce qui en fait un choix solide pour un serveur voir même un poste de travail. Cette stabilité vient que les développeurs testent longtemps une version d'un outil avant de l'intégré. Ce qui implique aussi que les paquets ne sont souvent pas les dernières versions mais sont plus simples
 
@@ -15,6 +25,7 @@ Debian utilisent son resolveur de paquet historique ``apt`` qui permet si on ins
 En dessous d'apt qui n'est qu'un résolveur on retrouve ``dpkg`` qui lui installes les packages.
 
 En plus de cela ``apt`` s'utilise de deux façon:
+
 - ``apt``: Pour quand il doit y avoir de l'intéractivité entre l'utilisateur et le shell
 - ``apt-get``: Pour quand il ne doit pas y avoir d'intéractivité entre l'utilisateur et le shell. Utile dans des scripts Shell ou bien pour créer des images docker
 
