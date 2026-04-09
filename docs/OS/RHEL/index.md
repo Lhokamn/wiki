@@ -75,10 +75,10 @@ RHEL étant payant, il fallait être en entreprise ou être vraiment motivé pou
 
 Mais comme le code source de RHEL se doit d'être ouvert car ils sont soumis à la GPLv2, certaines personnes se sont amusés à tout recompiler (en changeant le logo) et à proposé des versions binairement compatible. Je vais en lister quelqu'uns :
 
-- centOS : L'historique qui avait l'idée de faire ce fork. Mais depuis 2021, centOS est passé en mode "stream" donc il n'y a plus la stabilité de RHEL
-- Rocky Linux : Le nouveau clone qui est 100% binairement compatible
-- Alma Linux : Le nouveau clone à 99% comptabile car il opère une gestion de compatibilité avec des plus vieux systèmes que la version actuel. Et est géré par une association
-- Fedora : Pas un clone car c'est Red Hat qui est en charge de la distribution. Mais un Red Hat tournée vers le poste client (et gratuit)
+- centOS : L'historique qui avait l'idée de faire ce fork. Mais depuis 2021, centOS est passé en mode "stream" donc il n'y a plus la stabilité de RHEL.
+- Rocky Linux : Le nouveau clone qui est 100% binairement compatible.
+- Alma Linux : Le nouveau clone à 99% comptabile car il opère une gestion de compatibilité avec des plus vieux systèmes que la version actuel. Et est géré par une association.
+- Fedora : Pas un clone car c'est Red Hat qui est en charge de la distribution. Mais un Red Hat tournée vers le poste client (et gratuit).
 
 !!! info
     petit apparté sur Fedora, c'est une distribution qui a engendré énormément de distribution fille. Notamment du coté du jeux vidéos. Je pense en premier à Bazzite OS qui est vraiment un OS Clé en main pour jouer.
